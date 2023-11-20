@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "packageManager":"pnpm@8.10.3",
+  "packageManager": "pnpm@8.10.3",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "node ./scripts/update-version.js",
     "fix": "eslint . --fix"
   },
   "keywords": [],
@@ -20,5 +21,8 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.18.1",
     "typescript": "*"
+  },
+  "dependencies": {
+    "release-it": "^17.0.0"
   }
 }

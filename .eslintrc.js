@@ -8,7 +8,6 @@ module.exports = {
     'standard'
   ],
 
-  
   overrides: [
     {
       env: {
