@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
+  "extends": [
     'plugin:vue/vue3-essential',
     'standard'
   ],
