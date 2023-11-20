@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "version": "node ./scripts/update-version.js",
+    "release": "release-it",
     "fix": "eslint . --fix"
   },
   "keywords": [],
