@@ -1,14 +1,17 @@
 {
   "name": "demo",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "packageManager": "pnpm@8.10.3",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "version": "node ./scripts/update-version.js",
-    "release": "release-it",
-    "fix": "eslint . --fix"
+    "release": "release-it --no-npm --no-git",
+    "fix": "eslint . --fix",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +27,7 @@
     "typescript": "*"
   },
   "dependencies": {
-    "release-it": "^17.0.0"
+    "release-it": "^17.0.0",
+    "standard-version": "^9.5.0"
   }
 }
